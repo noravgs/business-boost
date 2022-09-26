@@ -1,0 +1,111 @@
+html,
+body {
+    height: 100%;
+    font-size: 1rem;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+   --cell-size: 100px;
+  
+   --color: #a3b181; 
+   --color-set: #3a5a40;
+   --hover-color: #8fb996;
+   --nav-color: #131d98;
+   --nav-hover: #269ad0;
+   --highlight-color: #2dccf0;
+   --highlight-color-two: #346cdc;
+  
+  
+   --font-size: 1rem;
+   --font-size-lg: 2rem;
+   --font-size-xl: 3rem;
+    --white: #fff;
+   --green: #588157;
+   --red: #e91e63;
+   --black: #000;
+   --bg-body: #dad7cd;
+    --filled-color: #111d13;
+   --filled-bg: #e8eddf;
+  }
+
+  body{
+   background-color: var(--bg-body);
+   
+  }
+  nav,footer{
+   background-color: var(--nav-color);
+   
+  }
+.btn{
+ background-color: var(--red);
+ color: var(--white);
+}
+
+.btn:hover{
+background-color: var(--nav-hover);
+}
+.card-container{
+  margin-top: 10rem;  
+}
+.button{
+ background-color: var(--red);
+}
+.page-header {
+    margin-top: 4rem;
+    font-size: 1.25rem;
+}
+
+/* .page-section {
+    background-color: red;
+    height: 40%;
+} */
+
+.btn-nav{
+    margin-right: .5rem;
+}
+
+
+
+.home{
+    border: 2px solid black;
+    min-height: 80vh;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 80%;
+}
+
+.btn-liked{
+    color: #f03566;
+  }
+
+.btn-bookmarked{
+    background: #ffff;
+}
+
+.btn-sign-in{
+    background-color: var(--red);
+    color: var(--black);
+}
+
+footer{
+ position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+ color: var(--white);
+ align-self:center;
+ text-align: center;
+ }
+ footer li{
+  list-style: none;
+  display: inline-block;
+  color: var(--white);
+ }
