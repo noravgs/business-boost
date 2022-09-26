@@ -16,10 +16,11 @@ body {
    --color: #a3b181; 
    --color-set: #3a5a40;
    --hover-color: #8fb996;
-   --nav-color: #131d98;
-   --nav-hover: #269ad0;
+   --nav-color: rgb(65, 61, 236) ;
+   --nav-hover: rgb(122,132,240);
    --highlight-color: #2dccf0;
    --highlight-color-two: #346cdc;
+   --card-color: rgb(255,225,225);
   
   
    --font-size: 1rem;
@@ -27,9 +28,9 @@ body {
    --font-size-xl: 3rem;
     --white: #fff;
    --green: #588157;
-   --red: #e91e63;
+   --red: rgb(228,74,73);
    --black: #000;
-   --bg-body: #dad7cd;
+   --bg-body: rgb(224,232,251);
     --filled-color: #111d13;
    --filled-bg: #e8eddf;
   }
@@ -43,6 +44,7 @@ body {
    
   }
 .btn{
+    border:none;
  background-color: var(--red);
  color: var(--white);
 }
@@ -108,4 +110,21 @@ footer{
   list-style: none;
   display: inline-block;
   color: var(--white);
+ }
+
+ .hero-image img{
+     width: 50%;
+ }
+
+ .nav-link{
+     color: white;
+ }
+
+ .card-container .card{
+     background-color: var(--card-color);
+ }
+
+ .container img{
+    padding-left: 50px;
+     width: 50%;
  }
