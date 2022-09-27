@@ -18,4 +18,5 @@ router.get("/my-stores", ensureAuth, postsController.getStores);
 router.get("/bookmarks", ensureAuth, postsController.getBookmarks);
 router.post("/signup", authController.postSignup);
 
+
 module.exports = router;
