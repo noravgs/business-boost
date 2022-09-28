@@ -21,7 +21,7 @@ While working with React it made the process of creating an APP cleaner and easi
 ## Examples:
 Take a look at these couple examples that I have in my own portfolio:
 
-**Poke Type:** https://github.com/noravgs/poke-api
+**Instant Cafe:** https://github.com/noravgs/instant-cafe
 
 **Mix It Up:** https://github.com/noravgs/mix-it-up-API
 
