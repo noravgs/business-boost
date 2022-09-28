@@ -64,10 +64,6 @@ background-color: var(--nav-hover);
     font-size: 1.25rem;
 }
 
-/* .page-section {
-    background-color: red;
-    height: 40%;
-} */
 
 .btn-nav{
     margin-right: .5rem;
@@ -107,8 +103,8 @@ footer{
  align-self:center;
  text-align: center;
  }
- footer li{
-  list-style: none;
+ footer li {
+
   display: inline-block;
   color: var(--white);
  }
@@ -130,25 +126,18 @@ footer{
 
 
  .container img{
-    /* padding-top: 50px; */
-     width: 100%;
+   width: 100%;
      border-radius: 10%;
  }
 
  .image-post{
-     /* align-content: center; */
-     padding-top: 40px;
+  padding-top: 40px;
     
  }
 
 
  .resources{
-     /* display: flex;
-     flex-direction: column; */
-     /* justify-content:center; */
      padding: 5%;
-    /* font-size: small;
-    text-align: center; */
  }
 
  button > .small{
@@ -156,6 +145,13 @@ footer{
      height: 50px;
  }
 
- 
+ footer a{
+     list-style: none;
+     color: black;
+ }
+
+ footer a:hover{
+color: var(--nav-hover);
+ }
 
  

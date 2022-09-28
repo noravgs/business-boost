@@ -1,6 +1,6 @@
 <%- include('partials/header') -%>
 <!-- if the user clicks login this code will render and asks for email and password the ejs contains error fetching and the auth is local once the info is validated it will make a post request to access the profile-->
-<main class="container">
+<main class="container py-5">
   <div class="row justify-content-center">
     <section class="col-6 mt-5">
       <% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
