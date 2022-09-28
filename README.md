@@ -1,7 +1,7 @@
 # Business Boost
 Share and Support your favorite local shops. List of resources for anyone that wants to start their own business. 
 
-![image]()
+![image](https://github.com/noravgs/business-boost/blob/main/public/imgs/business-boost.gif?raw=true)
 
 ## How It's Made:
 
