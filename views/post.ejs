@@ -14,6 +14,14 @@
         </form>
         <h3 class="col-3">Likes: <%= post.likes %></h3>
         <%if(post.user == user.id){ %>
+          <form
+            class="col justify-content-end"
+            action="/post/bookmarkPost/<%= post.id %>?_method=PUT"
+            method="POST"
+          >
+          <button class="<%if(post.bookmarks.includes(user.id)){ %> bi bi-bookmark-fill<%} else { %> bi bi-bookmark <% }%>
+            btn btn-primary" type="submit"></button>
+          </form>
         <form
           action="/post/deletePost/<%= post.id %>?_method=DELETE"
           method="POST"
