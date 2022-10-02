@@ -61,8 +61,8 @@ module.exports = {
   },
   createPost: async (req, res) => {
     try {
-      // Upload image to cloudinary
-      const result = await cloudinary.uploader.upload(req.file.path);
+      // Upload image to cloudinary and specify a folder to add your files
+      const result = await cloudinary.uploader.upload(req.file.path, {folder: 'business-boost'});
 
       await Post.create({
         title: req.body.title,
