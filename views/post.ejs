@@ -1,18 +1,18 @@
 <%- include('partials/logged-in') -%>
 <!-- the posts arent rendering check other example of code -->
-<div class="container">
-  <div class="row justify-content-center mt-5">
-    <div class="col-6">
-      <img class="img-fluid image-post" src="<%= post.image%>" />
-      <div class="row justify-content-between">
+<div class="container mx-auto">
+  <div class="col justify-content-center mt-5">
+    <div class="card col-6 mx-auto ">
+      <img class="img-fluid card-img-top" src="<%= post.image%>" />
+      <div class="row justify-content-between mx-auto">
         <form
-          class="col-1"
+          class="col"
           action="/post/likePost/<%= post.id %>?_method=PUT"
           method="POST"
         >
-          <button class="btn btn-primary fa fa-heart" type="submit"></button>
+          <button class="btn btn-primary btn-small fa fa-heart" type="submit"></button>
         </form>
-        <h3 class="col-3">Likes: <%= post.likes %></h3>
+        <span class="col px-md-5">Likes: <%= post.likes %></span>
         <%if(post.user == user.id){ %>
           <form
             class="col justify-content-end"
@@ -20,40 +20,43 @@
             method="POST"
           >
           <button class="<%if(post.bookmarks.includes(user.id)){ %> bi bi-bookmark-fill<%} else { %> bi bi-bookmark <% }%>
-            btn btn-primary" type="submit"></button>
+            btn btn-primary btn-small" type="submit"></button>
           </form>
         <form
           action="/post/deletePost/<%= post.id %>?_method=DELETE"
           method="POST"
           class="col-3"
         >
-          <button class="btn btn-primary fa fa-trash" type="submit"></button>
+          <button class="btn btn-primary btn-small fa fa-trash" type="submit"></button>
         </form>
+        <h2><%= post.title %></h2>
+      <p class="card-text"><%= post.caption %></p>
+      <p class="card-text">By: <%= user.userName %></p>
         <%}%>
       </div>
     </div>
-    <div class="col-3 mt-5">
-      <h2><%= post.title %></h2>
-      <p><%= post.caption %></p>
-      <p>By: <%= user.userName %></p>
-    </div>
-    <div class="mt-5">
+    
+    <div class="comment-box ml-2 card mx-auto">
       <h2>Add a comment</h2>
-      <form action="/comment/createComment/<%= post.id %>" method="POST">
-        <div class="mb-3">
+      <form class="comment-area" action="/comment/createComment/<%= post.id %>" method="POST">
+        <div class="mb-3 mx-auto">
             <label for="comment" class="form-label">Comment</label>
             <input type="text" class="form-control" id="comment" name="comment">
         </div>
         <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
       </form>
     </div>
-    <ul>
+    <div class="card mx-auto mb-3" >
+      <h3>comments</h3>
+    <ul class="list-group list-group-flush">
       <% for(var i=0; i<comments.length; i++) {%>
-        <li class="col-6 justify-content-between mt-5">
-          <%= comments[i]?.comment %>
+        <li class="list-group-item">
+          <p><%= comments[i]?.comment %></p>
+          <p class="card-text">By: <%= user.userName %></p>
         </li>
       <% } %>
     </ul>
+    </div>
     <div class="col-6 mt-5">
       <a class="btn btn-primary" href="/profile">Return to Profile</a>
       <a class="btn btn-primary" href="/feed">Return to Feed</a>
