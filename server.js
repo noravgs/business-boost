@@ -63,3 +63,7 @@ app.use("/comment", commentRoutes);
 app.listen(process.env.PORT, () => {
   console.log("Server is running, you better catch it!");
 });
+
+app.get('/', (req, res) => {
+  res.sendStatus(200)
+})
