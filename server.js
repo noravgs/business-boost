@@ -12,6 +12,7 @@ const mainRoutes = require("./routes/main");
 const postRoutes = require("./routes/posts");
 const commentRoutes = require("./routes/comments");
 
+
 //Use .env file in config folder
 require("dotenv").config({ path: "./config/.env" });
 
@@ -64,6 +65,3 @@ app.listen(process.env.PORT, () => {
   console.log("Server is running, you better catch it!");
 });
 
-app.get('/', (req, res) => {
-  res.sendStatus(200)
-})
