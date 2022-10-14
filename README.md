@@ -1,6 +1,6 @@
 # Business Boost
 Share and Support your favorite local shops. List of resources for anyone that wants to start their own business. 
-**Link to project:** https://business-boost.onrender.com/
+**Link to project:** https://business-boost.cyclic.app/
 
 ![image](https://github.com/noravgs/business-boost/blob/main/public/imgs/business-boost.gif?raw=true)
 
